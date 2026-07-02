@@ -7,9 +7,8 @@ def yes_or_no(prompt):
     user_answer = prompt_append(prompt).lower()
     # other_text.append(f"{prompt}{user_answer}")
     while user_answer != 'y' and user_answer != 'n':
-        other_text.append(colored("Please enter 'y' or 'n'!", WARNING_COLOR))
+        update_append((colored("Please enter 'y' or 'n'!", WARNING_COLOR)))
         user_answer = prompt_append(prompt).lower()
-        other_text.append(f"{prompt}{user_answer}")
     return user_answer
 
 

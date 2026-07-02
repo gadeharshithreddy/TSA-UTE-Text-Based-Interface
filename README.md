@@ -4,5 +4,5 @@ The idea of Autoschedule came as we were looking at how we organize our work in 
 
 Commands to get started:
 1. Needs a Gemini API key to work (put in the .env file).
-2. Install python dependencies.
+2. Install python dependencies (pip install -r requirements.txt)
 3. python main.py

@@ -177,6 +177,7 @@ def ai_parsing(prompt, work_groups, previous_works_list, dictionary_with_break_t
     If the command is unclear return False without additional explanations.
     Important:
         If some of the inputs needed for the command are unclear, return "none" for the input value.
+        DO NOT return "string" for some inputs if the inputs are unclear!!!!!
         This is a example for the add work command. Since the group is not provided, it is 'none'.
         Ex: if user inputs: playground 30 minutes
         Output: {{
@@ -189,8 +190,6 @@ def ai_parsing(prompt, work_groups, previous_works_list, dictionary_with_break_t
         }}
     When identifying a previously added work, match it against previously_added_works_list.
     When identifying work for removal, locate it in work_groups.
-    If the user names a work or a group in the process of creating it, make sure the name doesn't have 
-    leading or ending spaces. Ex: user_input = " work_name ", interpret it as "work_name"
     This is how the variables will be formated.
     work_groups = {{"work_group_name": [priority, {{"work_name" : time_for_work}}]}}
     priority_list = [{{work, time}}, {{work, time}}]

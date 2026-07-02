@@ -27,7 +27,7 @@ SUCCESS_COLOR = "green"
 
 # Text Speed
 normal_speed = 0.01
-tutorial_speed = 0.03
+tutorial_speed = 0.015
 long_text_speed = 0.005
 
 
